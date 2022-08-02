@@ -165,7 +165,6 @@ details summary::marker {
 
 .section-title {
     color: var(--color-main);
-    text-transform: uppercase;
     font-size: 2rem;
     margin-bottom: 1rem;
     font-weight: 400;
@@ -190,12 +189,13 @@ details summary::marker {
 /* Custom sections */
 
 
-#lang ul,
-#contact ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: .5rem;
-    grid-row-gap: .5rem;
+#lang ul li,
+#contact ul li {
+    display: inline-block;
+    width: 45%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #contact ul a {
@@ -209,18 +209,9 @@ details summary::marker {
     margin: 0;
 }
 
-/* Media Query */
+/* Media Query*/
 @media (max-width: 1280px) {
     main {
         width: calc(95vw - 4rem);
-    }
-
-    header .section-title {
-        font-size: 2.5rem;
-    }
-
-    #lang ul,
-    #contact ul {
-        grid-template-columns: repeat(1, 1fr);
     }
 }
