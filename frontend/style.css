@@ -95,10 +95,12 @@ figure img {
     border-radius: var(--rounded-default);
     max-width: 100%;
 }
-figure  figcaption{
+
+figure figcaption {
     font-size: 0;
 
 }
+
 abbr:hover {
     cursor: help;
 }
@@ -192,8 +194,8 @@ details summary::marker {
 /* Custom sections */
 
 
-.lang ul li,
-.contact ul li {
+.section-lang ul li,
+.section-contact ul li {
     display: inline-block;
     width: 45%;
     white-space: nowrap;
@@ -201,14 +203,14 @@ details summary::marker {
     text-overflow: ellipsis;
 }
 
-.contact ul a {
+.section-contact ul a {
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.lang .info {
+.section-lang .info {
     margin: 0;
 }
 
